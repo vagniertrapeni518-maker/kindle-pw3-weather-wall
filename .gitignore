@@ -1,0 +1,14 @@
+# generated: true
+# Secrets & local configs
+config
+kindle_config.txt
+*.env
+.env*
+
+# Runtime cache & logs
+last_weather.json
+*.log
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

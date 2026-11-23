@@ -1,0 +1,9 @@
+# generated: true
+# 复制为 config 后放到 Kindle 的 /mnt/us/weather-wall/config
+WALL_URL="http://YOUR_SERVER_IP:8088/wall.png"
+WALL_TOKEN="REPLACE_WITH_YOUR_RANDOM_TOKEN"
+
+# 刷新间隔（分钟）：测试建议先用 5，验收后改为 60（每小时整点唤醒刷新）
+REFRESH_MINUTES="60"
+RETRY_MINUTES="15"
+FRONTLIGHT="0"

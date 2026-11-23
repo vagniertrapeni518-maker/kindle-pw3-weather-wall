@@ -1,0 +1,15 @@
+# generated: true
+[Unit]
+Description=Kindle Paperwhite 3 Weather Wall Renderer
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=/etc/kindle-wall.env
+ExecStart=/usr/bin/python3 -X utf8 /opt/kindle-wall/weather_server.py --host 0.0.0.0 --port 8088 --cache /opt/kindle-wall/last_weather.json
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
